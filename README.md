@@ -9,7 +9,7 @@
 - Ansible
 
 ## طريقة التشغيل
-`bash
+```bash
 # 1. شغل container
 docker run -it ubuntu:22.04 bash
 
@@ -18,7 +18,8 @@ apt update && apt install -y ansible
 
 # 3. شغل الـ playbook
 ansible-playbook test.yml
-`bash
+
+```bash
 ---
 - hosts: localhost
   connection: local
