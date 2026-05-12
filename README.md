@@ -1,5 +1,5 @@
                                             ---
-## meta-scripts 🚀
+# meta-scripts 🚀
 
 مجموعة سكربتات Ansible للتجربة والتعلم على Docker
 
@@ -18,6 +18,7 @@ apt update && apt install -y ansible
 
 # 3. شغل الـ playbook
 ansible-playbook test.yml
+
 ```bash
 ---
 - hosts: localhost
