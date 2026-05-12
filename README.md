@@ -19,3 +19,10 @@ apt update && apt install -y ansible
 # 3. شغل الـ playbook
 ansible-playbook test.yml
 ```bash
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: ترحيب
+      debug:
+        msg: "Ansible شغال بدون dpkg 🎉"
