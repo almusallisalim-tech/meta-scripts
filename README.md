@@ -19,7 +19,7 @@ apt update && apt install -y ansible
 # 3. شغل الـ playbook
 ansible-playbook test.yml
 ```
-مثال playbook
+```yaml
 ---
 - hosts: localhost
   connection: local
@@ -27,3 +27,8 @@ ansible-playbook test.yml
     - name: ترحيب
       debug:
         msg: "Ansible شغال بدون dpkg 🎉"
+```
+
+## ملاحظة
+هذا المشروع كان لحل مشكلة `dpkg-statoverride` على UserLand 😂  
+الحل النهائي: Docker
