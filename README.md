@@ -1,4 +1,11 @@
-                                            ---
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: ترحيب
+      debug:
+        msg: "Ansible شغال بدون dpkg 🎉"
+      
 # meta-scripts 🚀
 
 مجموعة سكربتات Ansible للتجربة والتعلم على Docker
@@ -17,6 +24,14 @@ docker run -it ubuntu:22.04 bash
 apt update && apt install -y ansible
 
 # 3. شغل الـ playbook
+ansible-playbook test.yml
+```
+```bash
+git clone https://github.com/USERNAME/meta-scripts.git
+cd meta-scripts
+docker run -it -v $(pwd):/work ubuntu:22.04 bash
+cd /work
+apt update && apt install -y ansible
 ansible-playbook test.yml
 ```
 ```yaml
