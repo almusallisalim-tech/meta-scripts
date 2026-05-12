@@ -1,11 +1,4 @@
 ---
-- hosts: localhost
-  connection: local
-  tasks:
-    - name: ترحيب
-      debug:
-        msg: "Ansible شغال بدون dpkg 🎉"
-      
 # meta-scripts 🚀
 
 مجموعة سكربتات Ansible للتجربة والتعلم على Docker
@@ -59,4 +52,4 @@ ansible-playbook test.yml
 
 ## ملاحظة
 هذا المشروع كان لحل مشكلة `dpkg-statoverride` على UserLand 😂  
-الحل النهائي: Docker
+الحل النهائي: Do
