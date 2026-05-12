@@ -28,6 +28,19 @@ ansible-playbook test.yml
       debug:
         msg: "Ansible شغال بدون dpkg 🎉"
 ```
+*1.* `Add file` > `Create new file`  
+*2.* الاسم: `test.yml`  
+*3.* 
+
+*الوضع الحالي:*
+العنصر	الحالة
+**README.md**	✅ كامل ومضبوط
+**الأوامر**	✅ `apt` صحيحة
+**بلوك YAML**	✅ ملون ومرتب
+**ملاحظة UserLand**	✅ أسطورية 😂
+
+*4.* `Commit new file`
+
 
 ## ملاحظة
 هذا المشروع كان لحل مشكلة `dpkg-statoverride` على UserLand 😂  
